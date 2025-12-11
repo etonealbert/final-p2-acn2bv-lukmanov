@@ -40,16 +40,6 @@ Este proyecto es una aplicación web completa que permite gestionar un catálogo
 
 ---
 
-## 🚀 Tecnologías Utilizadas
-
-- **Backend:** PHP 7.4+
-- **Base de Datos:** MySQL 5.7+
-- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
-- **AJAX:** Fetch API
-- **Biblioteca Externa:** SweetAlert2 (notificaciones)
-- **Arquitectura:** REST API con JSON
-
----
 
 ## 📦 Estructura de Archivos
 
@@ -201,24 +191,6 @@ Parámetros:
 - **Tablet (768px):** Layout de 2 columnas
 - **Mobile (<768px):** Layout de 1 columna
 - Menús y controles adaptados a pantallas táctiles
-
----
-
-## 🐛 Solución de Problemas
-
-### **Error de conexión a la base de datos**
-- Verificar que MySQL esté corriendo
-- Revisar credenciales en `conexion.php`
-- Confirmar que la base de datos `stranger_things_db` existe
-
-### **No se muestran los personajes**
-- Abrir consola del navegador (F12) y revisar errores
-- Verificar que el archivo `database.sql` se ejecutó correctamente
-- Revisar permisos del usuario de MySQL
-
-### **El tema no se guarda**
-- Verificar que las sesiones PHP estén habilitadas
-- Comprobar permisos de escritura en el directorio de sesiones
 
 ---
 
