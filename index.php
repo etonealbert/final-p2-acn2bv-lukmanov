@@ -44,7 +44,7 @@ $tema_actual = isset($_SESSION['tema']) ? $_SESSION['tema'] : 'oscuro';
     <main class="contenedor">
         <section class="filtros">
             <div class="campo-busqueda">
-                <input type="text" id="busqueda" placeholder="🔍 Buscar por nombre..." onkeyup="aplicarFiltros()">
+                <input type="text" id="busqueda" placeholder="🔍 Buscar por nombre..." onkeyup="debounce(aplicarFiltros, 300)()">
             </div>
             <div class="campo-filtro">
                 <select id="filtro-rol" onchange="aplicarFiltros()">

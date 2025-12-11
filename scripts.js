@@ -1,10 +1,18 @@
 let paginaActual = 1;
 let totalPaginas = 1;
 const personajesPorPagina = 5;
+let timeoutBusqueda = null;
 
 document.addEventListener('DOMContentLoaded', function() {
     cargarPersonajes();
 });
+
+function debounce(func, delay) {
+    return function() {
+        clearTimeout(timeoutBusqueda);
+        timeoutBusqueda = setTimeout(func, delay);
+    }
+}
 
 function cambiarTema(tema) {
     window.location.href = `?tema=${tema}`;
