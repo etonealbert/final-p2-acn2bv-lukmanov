@@ -12,6 +12,9 @@ $tema_actual = isset($_SESSION['tema']) ? $_SESSION['tema'] : 'oscuro';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo interactivo de personajes de Stranger Things con búsqueda, filtros y gestión completa CRUD">
+    <meta name="author" content="Albert Lukmanov">
+    <meta name="keywords" content="Stranger Things, personajes, PHP, MySQL, CRUD, catálogo">
     <title>Stranger Things - Catálogo de Personajes</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
