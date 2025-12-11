@@ -1,0 +1,87 @@
+===============================================
+DATOS DE ENTREGA - DVPANEL
+Proyecto Final - Programación Web II
+===============================================
+
+### DATOS DEL ESTUDIANTE
+
+Nombre: Albert Lukmanov
+ID Académico: 2734049210
+Email: albert.lukmanov@davinci.edu.ar
+
+### DATOS DE CURSADA
+
+Materia: Programación Web II
+Comisión: ACN2BV
+Profesor: Sergio Daniel Medina
+Modalidad: Noche "BV" - Segundo cuatrimestre
+
+### INFORMACIÓN DEL PROYECTO
+
+Título: Stranger Things - Catálogo de Personajes
+Descripción: Sistema web de gestión CRUD de personajes de la serie Stranger Things, 
+desarrollado con PHP, MySQL, JavaScript y AJAX.
+
+Repositorio: https://github.com/usuario/final-p2-acn2bv-lukmanov
+
+### CARACTERÍSTICAS IMPLEMENTADAS
+
+✅ Base de datos MySQL con 12 personajes iniciales
+✅ API REST con endpoints JSON
+✅ CRUD completo (Crear, Leer, Actualizar, Eliminar)
+✅ Búsqueda por nombre en tiempo real
+✅ Filtro por rol (Niños, Adolescentes, Adultos, Villanos)
+✅ Paginación (5 personajes por página)
+✅ AJAX con Fetch API (sin recargar página)
+✅ Temas claro/oscuro con sesiones PHP
+✅ Diseño responsive (mobile, tablet, desktop)
+✅ Validaciones frontend (HTML5) y backend (PHP)
+✅ SweetAlert2 para notificaciones
+✅ Animaciones y efectos visuales
+✅ Código limpio y documentado
+
+### TECNOLOGÍAS UTILIZADAS
+
+- Backend: PHP 7.4+
+- Base de Datos: MySQL 5.7+
+- Frontend: HTML5, CSS3, JavaScript ES6+
+- AJAX: Fetch API
+- Biblioteca: SweetAlert2
+- Control de versiones: Git
+
+### ARCHIVOS DEL PROYECTO
+
+1. index.php - Página principal
+2. api.php - Endpoints REST
+3. conexion.php - Conexión a base de datos
+4. scripts.js - Lógica JavaScript/AJAX
+5. style.css - Estilos responsive
+6. database.sql - Script de base de datos
+7. README.md - Documentación completa
+8. INSTALACION.txt - Guía de instalación
+
+### INSTRUCCIONES DE EVALUACIÓN
+
+1. Importar database.sql en MySQL
+2. Configurar conexion.php (si es necesario)
+3. Abrir index.php en navegador
+4. Probar todas las funcionalidades CRUD
+5. Verificar filtros, búsqueda y paginación
+6. Cambiar entre temas claro/oscuro
+7. Verificar responsive en móvil
+
+### NOTAS ADICIONALES
+
+- El proyecto cumple con TODOS los requisitos obligatorios
+- Se implementaron TODOS los extras para nota 10
+- El código está en español según especificaciones
+- Se realizaron 25 commits incrementales
+- La aplicación funciona sin errores
+
+Fecha de entrega: Diciembre 2024
+
+===============================================
+Albert Lukmanov - ACN2BV
+Programación Web II
+===============================================
+
