@@ -442,10 +442,15 @@ footer {
     text-align: center;
     margin-top: 50px;
     color: var(--texto-secundario);
+    font-size: 0.9rem;
 }
 
 footer p {
     margin: 5px 0;
+}
+
+footer p:first-child {
+    font-weight: 600;
 }
 
 @media (max-width: 768px) {
