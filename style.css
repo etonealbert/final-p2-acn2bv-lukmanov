@@ -496,18 +496,30 @@ footer p:first-child {
 
     .info-autor {
         font-size: 0.8rem;
+        padding: 10px;
     }
 
     .barra-controles .contenedor {
         flex-direction: column;
     }
 
+    .controles-tema {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn-principal {
+        width: 100%;
+    }
+
     .filtros {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     .lista-personajes {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .modal-contenido {
@@ -517,6 +529,16 @@ footer p:first-child {
 
     .botones-formulario {
         flex-direction: column;
+    }
+
+    .paginacion {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .info-paginacion {
+        width: 100%;
+        text-align: center;
     }
 }
 
