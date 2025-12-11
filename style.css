@@ -350,6 +350,16 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: fundirFondo 0.3s ease;
+}
+
+@keyframes fundirFondo {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
 }
 
 .modal-contenido {
