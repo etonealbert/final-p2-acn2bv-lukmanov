@@ -125,6 +125,12 @@ window.onclick = function(evento) {
     }
 }
 
+document.addEventListener('keydown', function(evento) {
+    if (evento.key === 'Escape') {
+        cerrarModal();
+    }
+});
+
 async function guardarPersonaje(evento) {
     evento.preventDefault();
 
