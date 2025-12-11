@@ -16,6 +16,9 @@ function aplicarFiltros() {
 }
 
 async function cargarPersonajes() {
+    const contenedor = document.getElementById('lista-personajes');
+    contenedor.innerHTML = '<div class="cargando">Cargando personajes...</div>';
+    
     const busqueda = document.getElementById('busqueda').value;
     const rol = document.getElementById('filtro-rol').value;
     
