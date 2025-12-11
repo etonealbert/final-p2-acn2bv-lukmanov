@@ -436,6 +436,16 @@ header h1 {
     padding: 50px;
     color: var(--texto-secundario);
     font-size: 1.2rem;
+    animation: pulsar 1.5s ease-in-out infinite;
+}
+
+@keyframes pulsar {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
 }
 
 .mensaje-vacio {
