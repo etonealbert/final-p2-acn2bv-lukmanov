@@ -1,0 +1,96 @@
+===============================================
+INSTRUCCIONES DE INSTALACIÓN
+===============================================
+
+Proyecto: Stranger Things - Catálogo de Personajes
+Autor: Albert Lukmanov
+Email: albert.lukmanov@davinci.edu.ar
+Comisión: ACN2BV
+
+===============================================
+REQUISITOS
+===============================================
+
+- PHP 7.4 o superior
+- MySQL 5.7 o superior
+- Servidor web (Apache/Nginx) o XAMPP/WAMP
+- Navegador web moderno (Chrome, Firefox, Edge, Safari)
+
+===============================================
+PASOS DE INSTALACIÓN
+===============================================
+
+1. CLONAR O DESCARGAR EL PROYECTO
+   - Descargar el repositorio como ZIP o clonar con Git
+
+2. CONFIGURAR EL SERVIDOR
+   - Si usa XAMPP/WAMP:
+     * Copiar la carpeta del proyecto a htdocs (XAMPP) o www (WAMP)
+     * Iniciar Apache y MySQL desde el panel de control
+   
+   - Si usa PHP incorporado:
+     * Abrir terminal en la carpeta del proyecto
+     * Ejecutar: php -S localhost:8000
+
+3. CREAR LA BASE DE DATOS
+   - Opción A (phpMyAdmin):
+     * Abrir http://localhost/phpmyadmin
+     * Ir a la pestaña "SQL"
+     * Copiar y pegar el contenido de database.sql
+     * Hacer clic en "Continuar"
+   
+   - Opción B (Línea de comandos):
+     * Abrir terminal
+     * Ejecutar: mysql -u root -p < database.sql
+     * Ingresar contraseña si se solicita
+
+4. CONFIGURAR LA CONEXIÓN (si es necesario)
+   - Abrir el archivo conexion.php
+   - Modificar las credenciales si es necesario:
+     * DB_HOST: localhost
+     * DB_USER: root
+     * DB_PASS: (dejar vacío o tu contraseña)
+     * DB_NAME: stranger_things_db
+
+5. ACCEDER A LA APLICACIÓN
+   - XAMPP/WAMP: http://localhost/final-p2-acn2bv-lukmanov/
+   - PHP incorporado: http://localhost:8000/
+
+===============================================
+VERIFICACIÓN
+===============================================
+
+Si la instalación fue exitosa, deberías ver:
+- La página principal con el título "STRANGER THINGS"
+- Un listado de 12 personajes de la serie
+- Filtros y opciones de búsqueda funcionando
+- Botones para agregar, editar y eliminar personajes
+
+===============================================
+SOLUCIÓN DE PROBLEMAS
+===============================================
+
+ERROR: "Error de conexión a la base de datos"
+- Verificar que MySQL esté corriendo
+- Revisar las credenciales en conexion.php
+- Asegurarse de que la base de datos existe
+
+ERROR: No se muestran los personajes
+- Abrir la consola del navegador (F12)
+- Verificar errores en la pestaña "Console"
+- Confirmar que database.sql se ejecutó correctamente
+
+ERROR: El tema no se guarda
+- Verificar que las sesiones PHP estén habilitadas
+- Comprobar permisos de escritura en directorio de sesiones
+
+===============================================
+CONTACTO
+===============================================
+
+Para consultas o problemas:
+Albert Lukmanov
+albert.lukmanov@davinci.edu.ar
+
+===============================================
+
