@@ -1,0 +1,18 @@
+# IDE y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales PHP
+*.log
+*.tmp
+
+# Configuración local
+config.local.php
+
