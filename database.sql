@@ -1,6 +1,12 @@
+-- ========================================
 -- Base de datos para proyecto Stranger Things
+-- ========================================
 -- Autor: Albert Lukmanov
+-- Email: albert.lukmanov@davinci.edu.ar
 -- Materia: Programación Web II
+-- Comisión: ACN2BV
+-- Profesor: Sergio Daniel Medina
+-- ========================================
 
 CREATE DATABASE IF NOT EXISTS stranger_things_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
