@@ -1,19 +1,19 @@
 <?php
+error_reporting(0);
+ini_set('display_errors', 0);
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 define('DB_NAME', 'stranger_things_db');
 
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+mysqli_report(MYSQLI_REPORT_OFF);
 
-try {
-    $conexion = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+$conexion = @new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
+if ($conexion->connect_error) {
+    $conexion = null;
+} else {
     $conexion->set_charset('utf8mb4');
-} catch (Exception $e) {
-    die(json_encode([
-        'exito' => false,
-        'mensaje' => 'Error de conexión a la base de datos'
-    ]));
 }
 

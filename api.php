@@ -1,9 +1,28 @@
 <?php
+error_reporting(0);
+ini_set('display_errors', 0);
+
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
 
+if (!file_exists('conexion.php')) {
+    echo json_encode([
+        'exito' => false,
+        'mensaje' => 'Archivo de conexión no encontrado'
+    ], JSON_UNESCAPED_UNICODE);
+    exit;
+}
+
 require_once 'conexion.php';
+
+if (!isset($conexion) || $conexion->connect_errno) {
+    echo json_encode([
+        'exito' => false,
+        'mensaje' => 'No se pudo conectar a la base de datos. Verifica que MySQL esté corriendo y que hayas importado database.sql'
+    ], JSON_UNESCAPED_UNICODE);
+    exit;
+}
 
 $metodo = $_SERVER['REQUEST_METHOD'];
 $accion = isset($_GET['accion']) ? $_GET['accion'] : (isset($_POST['accion']) ? $_POST['accion'] : '');
