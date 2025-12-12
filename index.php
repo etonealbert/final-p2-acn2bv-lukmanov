@@ -113,7 +113,7 @@ $tema_actual = isset($_SESSION['tema']) ? $_SESSION['tema'] : 'oscuro';
 
     <footer>
         <div class="contenedor">
-            <p>&copy; 2024 Proyecto Final - Programación Web II</p>
+            <p>&copy; 2026 Proyecto Final - Programación Web II</p>
             <p>Albert Lukmanov - Comisión ACN2BV</p>
         </div>
     </footer>

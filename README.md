@@ -209,5 +209,5 @@ Este proyecto es un trabajo académico para el curso de Programación Web II.
 
 ---
 
-**Fecha de entrega:** Diciembre 2024
+**Fecha de entrega:** Diciembre 2025
 
